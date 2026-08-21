@@ -1,0 +1,48 @@
+# Public Bento API v1 operations that must appear in bento-api.yaml.
+# Source of truth: Rails routes under api/v1 plus docs.bentonow.com.
+# One operation per line: METHOD /path
+# Path params use {id}. Do not list Zapier, teams, integrations, or health.
+
+POST /api/v1/batch/subscribers
+POST /api/v1/batch/emails
+POST /api/v1/batch/events
+POST /api/v1/batch/broadcasts
+GET /api/v1/fetch/broadcasts
+GET /api/v1/fetch/fields
+POST /api/v1/fetch/fields
+GET /api/v1/fetch/search
+GET /api/v1/fetch/subscribers
+POST /api/v1/fetch/subscribers
+GET /api/v1/fetch/tags
+POST /api/v1/fetch/tags
+DELETE /api/v1/fetch/tags/{id}
+POST /api/v1/fetch/commands
+GET /api/v1/fetch/segments
+GET /api/v1/fetch/segments/{id}
+POST /api/v1/fetch/segments/{id}/match
+GET /api/v1/fetch/sequences
+POST /api/v1/fetch/sequences/{id}/emails/templates
+GET /api/v1/fetch/workflows
+GET /api/v1/fetch/emails/templates/{id}
+PATCH /api/v1/fetch/emails/templates/{id}
+POST /api/v1/data_deletion_requests
+GET /api/v1/stats/site
+GET /api/v1/stats/segment
+GET /api/v1/stats/report
+GET /api/v1/stats/ads
+GET /api/v1/experimental/blacklist
+POST /api/v1/experimental/validation
+POST /api/v1/experimental/content_moderation
+POST /api/v1/experimental/gender
+GET /api/v1/experimental/geolocation
+POST /api/v1/experimental/jesses_ruleset
+GET /api/v1/delivery/report
+GET /api/v1/delivery/events
+GET /api/v1/chat/conversations
+GET /api/v1/chat/conversations/by_email
+GET /api/v1/chat/conversations/{id}
+GET /api/v1/chat/inboxes
+POST /api/v1/chat/messages
+POST /api/v1/chat/conversations/{id}/messages
+POST /api/v1/chat/conversations/{id}/notes
+POST /api/v1/chat/conversations/{id}/status
