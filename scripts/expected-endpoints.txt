@@ -1,6 +1,3 @@
-# Public Bento API v1 operations that must appear in bento-api.yaml.
-# Source of truth: Rails routes under api/v1 plus docs.bentonow.com.
-# One operation per line: METHOD /path
 # Path params use {id}. Do not list Zapier, teams, integrations, or health.
 
 POST /api/v1/batch/subscribers

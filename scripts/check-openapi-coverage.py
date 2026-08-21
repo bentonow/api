@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Compare bento-api.yaml operations to scripts/expected-endpoints.txt."""
 
 from pathlib import Path
 import sys
